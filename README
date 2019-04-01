@@ -1,0 +1,9 @@
+This is the minimal program I could think of that could yield the swap
+usage on a FreeBSD system. I copied the original from the top utility of
+the FreeBSD base and just modified it slightly. If used with the -p
+flag, prints a line that is valid for piping to a Prometheus textfile. I
+suspect the usefulness of this rather small program would be to avoid
+using pstat -T or swapinfo and then having to parse the output with a
+script.
+
+Athanasios Douitsis, April 1, 2019
